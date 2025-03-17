@@ -2,7 +2,7 @@
 //  ScrumdingerUITestsLaunchTests.swift
 //  ScrumdingerUITests
 //
-//  Created by Quang Phat on 03/02/2025.
+//  Created by Quang Phat on 17/3/25.
 //
 
 import XCTest
@@ -17,6 +17,7 @@ final class ScrumdingerUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()

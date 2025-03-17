@@ -2,12 +2,12 @@
 //  ContentView.swift
 //  Scrumdinger
 //
-//  Created by Quang Phat on 03/02/2025.
+//  Created by Quang Phat on 17/3/25.
 //
 
 import SwiftUI
 
-struct MeetingView: View {
+struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct MeetingView: View {
 }
 
 #Preview {
-    MeetingView()
+    ContentView()
 }
