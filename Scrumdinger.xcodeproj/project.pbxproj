@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B88474642DF81B4F00F95F0D /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = B88474632DF81B4F00F95F0D /* TimerKit */; };
 		B8BD8D502DECBA5900306B38 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = B8BD8D4F2DECBA5900306B38 /* ThemeKit */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BD8D502DECBA5900306B38 /* ThemeKit in Frameworks */,
+				B88474642DF81B4F00F95F0D /* TimerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,7 @@
 			name = Scrumdinger;
 			packageProductDependencies = (
 				B8BD8D4F2DECBA5900306B38 /* ThemeKit */,
+				B88474632DF81B4F00F95F0D /* TimerKit */,
 			);
 			productName = Scrumdinger;
 			productReference = B851880F2D87C87D00C63965 /* Scrumdinger.app */;
@@ -110,6 +113,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				B822A72D2DECAD1000067C75 /* XCLocalSwiftPackageReference "ThemeKit" */,
+				B88474622DF81B4F00F95F0D /* XCLocalSwiftPackageReference "TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B85188102D87C87D00C63965 /* Products */;
@@ -345,9 +349,17 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ThemeKit;
 		};
+		B88474622DF81B4F00F95F0D /* XCLocalSwiftPackageReference "TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TimerKit;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B88474632DF81B4F00F95F0D /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
+		};
 		B8BD8D4F2DECBA5900306B38 /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B822A72D2DECAD1000067C75 /* XCLocalSwiftPackageReference "ThemeKit" */;
