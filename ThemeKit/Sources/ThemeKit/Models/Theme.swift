@@ -1,6 +1,11 @@
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
+
 import SwiftUI
 
-enum Theme: String {
+public enum Theme: String, CaseIterable, Identifiable, Codable {
+
     case bubblegum
     case buttercup
     case indigo
@@ -18,13 +23,19 @@ enum Theme: String {
     case teal
     case yellow
     
-    var accentColor: Color {
+    public var accentColor: Color {
         switch self {
         case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-    var mainColor: Color {
-        Color(rawValue)
+    public var mainColor: Color {
+        Color(rawValue, bundle: .module)
+    }
+    public var name: String {
+        rawValue.capitalized
+    }
+    public var id: String {
+        name
     }
 }
